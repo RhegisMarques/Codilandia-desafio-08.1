@@ -25,17 +25,17 @@ header {
   width: 100%;
   background-color: var(--dark);
 
-  .bg {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 300px;
-    padding-top: 79px;
-    background-image: url(/image/bg-img.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  padding-top: 79px;
+  background-image: url(/image/bg-header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
 
   .logo {
     width: 216px;
@@ -51,12 +51,10 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 48px 24px;
-  background-image: url(/image/bg-pizza.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 100%;
-
-
+  background-image: url(/image/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h2 {
     margin-bottom: 50px;
@@ -67,7 +65,7 @@ main {
 .list {
   display: grid;
   gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   width: 100%;
 }
 
@@ -220,12 +218,12 @@ footer {
 
   header {
 
-    .bg {
-      width: 100%;
-      height: 400px;
-      padding-top: 100px;
-      background-position: center bottom;
-    }
+
+    width: 100%;
+    height: 400px;
+    padding-top: 100px;
+    background-position: center bottom;
+
 
     .logo {
       width: 300px;
@@ -241,6 +239,10 @@ footer {
     align-items: center;
     width: 100%;
     padding: 64px 24px;
+    background-image: url(/image/bg-tablet.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
     h2 {
       font-size: 36px;
@@ -249,7 +251,7 @@ footer {
       margin-bottom: 50px;
     }
 
-    
+
   }
 
 
@@ -276,12 +278,9 @@ footer {
 
 @media (min-width: 1024px) {
   header {
-
-    .bg {
-      height: 600px;
-      padding-top: 112px;
-      background-position: center bottom;
-    }
+    height: 600px;
+    padding-top: 112px;
+    background-position: center bottom;
 
     .logo {
       width: 597px;
@@ -290,25 +289,38 @@ footer {
 
   }
 
-    footer {
-      flex-direction: row;
-      justify-content: center;
-      padding: 64px;
-      gap: 136px;
-  
-      .bg-footer {
-        width:488px;
-        height: 500px;
-        background-position: center;
-      }
-  
-      .text {
-        width:592px;
-        margin-top:108px;
-  
-      } 
-  
-  
+  main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 140px 24px;
+    background-image: url(/image/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+ 
+
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    padding: 64px;
+    gap: 136px;
+
+    .bg-footer {
+      width: 488px;
+      height: 500px;
+      background-position: center;
     }
+
+    .text {
+      width: 592px;
+      margin-top: 108px;
+
+    }
+
+
+  }
 
 }
